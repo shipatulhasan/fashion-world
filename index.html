@@ -15,7 +15,8 @@
         extend: {
           colors: {
             clifford: '#da373d',
-            penguine: '#FABE4C'
+            penguine: '#FABE4C',
+            lightPink: '#FFFBF0',
 
           },
           fontFamily: {
@@ -35,18 +36,21 @@
 
 <body>
   <!-- md:w-9/12 lg:w-1/4 -->
-  <header class="container mx-auto">
-    <nav class="flex flex-col md:flex-row justify-between items-center px-3 py-5 gap-5 md:gap-0">
-      <a href="#" class="w-auto md:w-5/12">
-        <img class=" max-w-[14rem] lg:w-3/4 px-5 md:px-0" src="images/logo.png" alt="">
-      </a>
-      <ul class=" font-roboto font-extrabold w-auto flex gap-x-3 md:gap-x-8 text-xs  md:text-sm lg:text-base">
-        <li><a href="#">Home</a></li>
-        <li><a href="#">Products</a></li>
-        <li><a href="#">About us</a></li>
-        <li><a href="#">Contact us</a></li>
-      </ul>
-    </nav>
+  <header>
+    <div  class="container mx-auto">
+      <nav class="flex flex-col md:flex-row justify-between items-center px-3 py-5 gap-5 md:gap-0">
+        <a href="#" class="w-auto md:w-5/12">
+          <img class=" max-w-[14rem] lg:w-3/4 px-5 md:px-0" src="images/logo.png" alt="">
+        </a>
+        <ul class=" font-roboto font-extrabold w-auto flex gap-x-3 md:gap-x-8 text-xs  md:text-sm lg:text-base">
+          <li><a href="#">Home</a></li>
+          <li><a href="#">Products</a></li>
+          <li><a href="#">About us</a></li>
+          <li><a href="#">Contact us</a></li>
+        </ul>
+      </nav>
+    </div>
+   
 
     <!-------------
          Heading section 
@@ -54,30 +58,33 @@
 
     <!-- Banner section -->
 
-    <section class="hero p-3 md:p-0 mt-10 ">
-      <div class=" flex flex-col-reverse md:flex-row items-center justify-around gap-10 ">
-        <div class="content md:w-5/12 space-y-4">
-          <h1 class="text-5xl lg:text-7xl font-bebas ">
-            <span class="text-penguine">Be the Penguins</span>
-            <br>
-            <span>of Winter</span>
-          </h1>
-          <p class="text-lg">
-            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Illum quam suscipit natus recusandae nisi at
-            cumque provident odio reiciendis nam?
-          </p>
-          <button class="bg-lime-600 py-3 px-6 rounded text-white">
-
-            <a href="#">
-              <i class="fa-solid fa-cart-shopping"></i>
-              Buy now
-            </a>
-          </button>
-        </div>
-        <div class="banner md:w-5/12">
-          <img class="w-full max-w-md" src="./images/model.png" alt="">
+    <section class="hero px-3 py-10 lg:py-0 bg-lightPink ">
+      <div class="container mx-auto">
+        <div class="h-fit lg:h-screen flex flex-col-reverse md:flex-row items-center justify-around gap-10 ">
+          <div class="content md:w-5/12 space-y-4">
+            <h1 class="text-5xl lg:text-7xl font-bebas ">
+              <span class="text-penguine">Be the Penguins</span>
+              <br>
+              <span>of Winter</span>
+            </h1>
+            <p class="text-lg">
+              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Illum quam suscipit natus recusandae nisi at
+              cumque provident odio reiciendis nam?
+            </p>
+            <button class="bg-lime-600 py-3 px-6 rounded text-white">
+  
+              <a href="#">
+                <i class="fa-solid fa-cart-shopping"></i>
+                Buy now
+              </a>
+            </button>
+          </div>
+          <div class="banner md:w-5/12">
+            <img class="w-full max-w-md" src="./images/model.png" alt="">
+          </div>
         </div>
       </div>
+   
 
     </section>
     <!-- Banner section End-->
@@ -277,76 +284,79 @@
     <!-- Mens-products end -->
 
     <!-- Benefits start -->
-      <section class="benefits mt-24 md:mt-28">
-        <div class="grid grid-cols-1 lg:grid-cols-2 grid-rows-3 items-center gap-10">
+    <section class="benefits mt-24 md:mt-28">
+      <div class="grid grid-cols-1 lg:grid-cols-2 grid-rows-3 items-center gap-10">
 
-           <!-- Box-1 -->
+        <!-- Box-1 -->
 
-           <div class="benefit text-center sm:text-left mr-5 xl:mr-12">
-            <div class="box flex flex-col sm:flex-row justify-start items-center gap-10 py-5 pl-0 sm:pl-10 rounded-lg shadow-xl">
-              <img class="w-2/6 sm:w-1/6 max-w-sm" src="./icons/image 12.png" alt="">
+        <div class="benefit bg-white text-center sm:text-left mr-5 xl:mr-12">
+          <div
+            class="box flex flex-col sm:flex-row justify-start items-center gap-10 py-5 pl-0 sm:pl-10 rounded-lg shadow-xl">
+            <img class="w-2/6 sm:w-1/6 max-w-sm" src="./icons/image 12.png" alt="">
             <div class="content w-auto px-10 sm:px-0 sm:w-6/12">
               <h2 class="text-2xl text-slate-800 font-bold font-roboto pb-3 ">
                 Find the Perfect Fit
               </h2>
               <p class="text-base font-roboto">
                 Everybody is different, which is why we
-                offer styles for every body.              
+                offer styles for every body.
               </p>
             </div>
-            </div>
           </div>
+        </div>
 
-          <!-- Banner -->
-          <div class="banner row-span-full lg:row-span-3">
-            <img src="./images/shopping.png" alt="">
-          </div>
+        <!-- Banner -->
+        <div class="banner row-span-full lg:row-span-3">
+          <img src="./images/shopping.png" alt="">
+        </div>
 
-          <!-- Box-2 -->
-          <div class="benefit text-center sm:text-left mr-5 xl:mr-12">
-            <div class="box flex flex-col sm:flex-row justify-start items-center gap-10 py-5 pl-0 sm:pl-10 rounded-lg shadow-xl">
-              <img class="w-2/6 sm:w-1/6 max-w-sm" src="./icons/image 12.png" alt="">
+        <!-- Box-2 -->
+        <div class="benefit bg-white text-center sm:text-left mr-5 xl:mr-12">
+          <div
+            class="box flex flex-col sm:flex-row justify-start items-center gap-10 py-5 pl-0 sm:pl-10 rounded-lg shadow-xl">
+            <img class="w-2/6 sm:w-1/6 max-w-sm" src="./icons/image 13.png" alt="">
             <div class="content w-auto px-10 sm:px-0 sm:w-6/12">
               <h2 class="text-2xl text-slate-800 font-bold font-roboto pb-3 ">
-                Find the Perfect Fit
+                Free Exchanges
               </h2>
               <p class="text-base font-roboto">
-                Everybody is different, which is why we
-                offer styles for every body.              
+                One of the many reasons you can shop
+                with peace of mind.
               </p>
             </div>
-            </div>
           </div>
+        </div>
 
-          <!-- Box-3 -->
-          <div class="benefit text-center sm:text-left mr-5 xl:mr-12">
-            <div class="box flex flex-col sm:flex-row justify-start items-center gap-10 py-5 pl-0 sm:pl-10 rounded-lg shadow-xl">
-              <img class="w-2/6 sm:w-1/6 max-w-sm" src="./icons/image 12.png" alt="">
+        <!-- Box-3 -->
+        <div class="benefit bg-white text-center sm:text-left mr-5 xl:mr-12">
+          <div
+            class="box flex flex-col sm:flex-row justify-start items-center gap-10 py-5 pl-0 sm:pl-10 rounded-lg shadow-xl">
+            <img class="w-2/6 sm:w-1/6 max-w-sm" src="./icons/image 14.png" alt="">
             <div class="content w-auto px-10 sm:px-0 sm:w-6/12">
               <h2 class="text-2xl text-slate-800 font-bold font-roboto pb-3 ">
-                Find the Perfect Fit
+                Contact Our Seller
               </h2>
               <p class="text-base font-roboto">
-                Everybody is different, which is why we
-                offer styles for every body.              
+                They are here to help you. That's quite
+                literally what we pay them for.
               </p>
             </div>
-            </div>
-            
           </div>
-        
 
         </div>
-      </section>
+
+
+      </div>
+    </section>
     <!-- Benefits end -->
 
   </main>
 
-<footer class="conatiner p-5 mx-auto mt-14 md:mt-24 mb-10">
-  <p class="text-base font-bold text-center">
-    ©2022. Penguine Commerce. All rights reserved. Sofia, Bulgaria.
-  </p>
-</footer>
+  <footer class="conatiner p-5 mx-auto mt-14 md:mt-24 mb-10">
+    <p class="text-base font-bold text-center">
+      ©2022. Penguine Commerce. All rights reserved. Sofia, Bulgaria.
+    </p>
+  </footer>
 
 </body>
 
