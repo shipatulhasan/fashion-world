@@ -14,6 +14,7 @@
             extend: {
               colors: {
                 clifford: '#da373d',
+                penguine:'#FABE4C'
                 
               },
               fontFamily:{
@@ -33,11 +34,11 @@
 <body>
     <!-- md:w-9/12 lg:w-1/4 -->
     <header class="container mx-auto">
-       <nav class="flex flex-col md:flex-row justify-between items-center p-6 gap-5 md:gap-0">
+       <nav class="flex flex-col md:flex-row justify-between items-center px-3 py-5 gap-5 md:gap-0">
            <a href="#" class="w-auto md:w-5/12">
-               <img class="w-full max-w-sm lg:w-3/4 px-5 md:px-0" src="images/logo.png" alt="">
+               <img class=" max-w-[14rem] lg:w-3/4 px-5 md:px-0" src="images/logo.png" alt="">
         </a>
-        <ul class=" font-roboto font-extrabold w-auto flex gap-x-3 md:gap-x-8 text-xs  md:text-sm lg:text-lg">
+        <ul class=" font-roboto font-extrabold w-auto flex gap-x-3 md:gap-x-8 text-xs  md:text-sm lg:text-base">
             <li><a href="#">Home</a></li>
             <li><a href="#">Products</a></li>
             <li><a href="#">About us</a></li>
@@ -48,33 +49,230 @@
        <!-------------
          Heading section 
         ------------>
-        
-    </header>
-    
-            <section class="hero container mx-auto p-3 md:p-0">
-                <div class=" flex flex-col-reverse md:flex-row items-center justify-around gap-10 ">
-                    <div class="content md:w-5/12 space-y-4">
-                        <h1 class="text-5xl lg:text-7xl font-bebas ">
-                           <span class="text-yellow-500">Be the Penguins</span> 
-                            <br>
-                            <span>of Winter</span>
-                        </h1>
-                        <p class="text-lg">
-                            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Illum quam suscipit natus recusandae nisi at cumque provident odio reiciendis nam?
-                        </p>
-                        <button class="bg-lime-600 py-3 px-6 rounded text-white">
 
-                            <a href="#">
-                                <i class="fa-solid fa-cart-shopping"></i>
-                                Buy now
-                            </a>
-                        </button>
-                    </div>
-                    <div class="banner md:w-5/12">
-                        <img class="w-full max-w-md" src="./images/model.png" alt="">
-                    </div>
-                </div>
-                
-            </section>
+        <!-- Banner section -->
+
+        <section class="hero p-3 md:p-0 mt-10 ">
+          <div class=" flex flex-col-reverse md:flex-row items-center justify-around gap-10 ">
+              <div class="content md:w-5/12 space-y-4">
+                  <h1 class="text-5xl lg:text-7xl font-bebas ">
+                     <span class="text-penguine">Be the Penguins</span> 
+                      <br>
+                      <span>of Winter</span>
+                  </h1>
+                  <p class="text-lg">
+                      Lorem ipsum dolor, sit amet consectetur adipisicing elit. Illum quam suscipit natus recusandae nisi at cumque provident odio reiciendis nam?
+                  </p>
+                  <button class="bg-lime-600 py-3 px-6 rounded text-white">
+
+                      <a href="#">
+                          <i class="fa-solid fa-cart-shopping"></i>
+                          Buy now
+                      </a>
+                  </button>
+              </div>
+              <div class="banner md:w-5/12">
+                  <img class="w-full max-w-md" src="./images/model.png" alt="">
+              </div>
+          </div>
+          
+      </section>
+         <!-- Banner section End-->
+    </header>
+
+    <main class="container mx-auto p-3">
+
+      <!-- woman-products -->
+
+      <section class="woman-products mt-12 md:mt-20">
+        <h1 class="text-5xl font-bebas pb-4 ml-4">
+          WoMan Jacket
+        </h1>
+        <div class="products grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 md:gap-5">
+
+            <!-- Jaket-1 -->
+          <div class="product bg-white rounded-md shadow-xl p-4 flex flex-col justify-between gap-8">
+            <div class="product-body">
+              <div class="bg-slate-200 p-5 rounded-md ">
+                <img  src="./images/jacket-1.png" alt="" srcset="">
+              </div>
+                <h2 class="text-2xl font-bold font-roboto  pt-5 ">
+                  Yellow Coat Jacket 
+                </h2>
+                <p class="text-base">
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Fuga, hic.
+                </p>
+              </div>
+              <div class="product-footer flex justify-between items-center gap-y-3 pb-3">
+                <h2 class="text-2xl text-penguine font-bold">
+                  $234
+                </h2>
+                <button class="bg-lime-600 py-3 px-6 rounded text-white">
+                  <a href="#">
+                      <i class="fa-solid fa-cart-shopping"></i>
+                      Buy now
+                  </a>
+              </button>
+              
+            </div>
+          </div>
+            <!-- Jaket-2 -->
+          <div class="product bg-white rounded-md shadow-xl p-4 flex flex-col justify-between gap-8">
+            <div class="product-body">
+              <div class="bg-slate-200 p-5 rounded-md ">
+                <img src="./images/jacket-2.png" alt="" srcset="">
+              </div>
+                <h2 class="text-2xl font-bold font-roboto  pt-5 ">
+                  Ladies Jacket  
+                </h2>
+                <p class="text-base">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat ea dolorum iure quisquam, facere velit labore ex a quam ullam. Tempora laudantium optio 
+                </p>
+              </div>
+              <div class="product-footer flex justify-between items-center gap-y-3 pb-3">
+                <h2 class="text-2xl text-penguine font-bold">
+                  $270
+                </h2>
+                <button class="bg-lime-600 py-3 px-6 rounded text-white">
+                  <a href="#">
+                      <i class="fa-solid fa-cart-shopping"></i>
+                      Buy now
+                  </a>
+              </button>
+              
+            </div>
+          </div>
+            <!-- Jaket-3 -->
+          <div class="product bg-white rounded-md shadow-xl p-4 flex flex-col justify-between gap-8">
+            <div class="product-body">
+              <div class="bg-slate-200 p-5 rounded-md ">
+                <img src="./images/jacket-3.png" alt="" srcset="">
+              </div>
+                <h2 class="text-2xl font-bold font-roboto  pt-5 ">
+                  Woman Leather Jacket 
+                </h2>
+                <p class="text-base">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat ea dolorum iure quisquam, facere velit labore ex a quam ullam. Tempora laudantium optio aut!
+                </p>
+              </div>
+              <div class="product-footer flex justify-between items-center gap-y-3 pb-3">
+                <h2 class="text-2xl text-penguine font-bold">
+                  $400
+                </h2>
+                <button class="bg-lime-600 py-3 px-6 rounded text-white">
+                  <a href="#">
+                      <i class="fa-solid fa-cart-shopping"></i>
+                      Buy now
+                  </a>
+              </button>
+              
+            </div>
+          </div>
+         
+        
+        </div>
+      
+        
+      </section>
+
+      <!-- woman-products end -->
+
+      <!-- Mens-products Start -->
+
+      <section class="Mens-products mt-14 md:mt-24">
+        <h1 class="text-5xl font-bebas pb-4 ml-4">
+          Mens Jacket
+        </h1>
+        <div class="products grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 md:gap-5">
+
+            <!-- Jaket-1 -->
+          <div class="product bg-white rounded-md shadow-xl p-4 flex flex-col justify-between gap-8">
+            <div class="product-body">
+              <div class="bg-slate-200 p-5 rounded-md ">
+                <img  src="./images/jacket-4.png" alt="" srcset="">
+              </div>
+                <h2 class="text-2xl font-bold font-roboto  pt-5 ">
+                  Snowboard Jacket Mens 
+                </h2>
+                <p class="text-base">
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Fuga, hic.
+                </p>
+              </div>
+              <div class="product-footer flex justify-between items-center gap-y-3 pb-3">
+                <h2 class="text-2xl text-penguine font-bold">
+                  $234
+                </h2>
+                <button class="bg-lime-600 py-3 px-6 rounded text-white">
+                  <a href="#">
+                      <i class="fa-solid fa-cart-shopping"></i>
+                      Buy now
+                  </a>
+              </button>
+              
+            </div>
+          </div>
+            <!-- Jaket-2 -->
+          <div class="product bg-white rounded-md shadow-xl p-4 flex flex-col justify-between gap-8">
+            <div class="product-body">
+              <div class="bg-slate-200 p-5 rounded-md ">
+                <img src="./images/jacket-5.png" alt="" srcset="">
+              </div>
+                <h2 class="text-2xl font-bold font-roboto  pt-5 ">
+                  Man Leather Jackets 
+                </h2>
+                <p class="text-base">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat ea dolorum iure quisquam, facere velit labore ex a quam ullam. Tempora laudantium optio 
+                </p>
+              </div>
+              <div class="product-footer flex justify-between items-center gap-y-3 pb-3">
+                <h2 class="text-2xl text-penguine font-bold">
+                  $270
+                </h2>
+                <button class="bg-lime-600 py-3 px-6 rounded text-white">
+                  <a href="#">
+                      <i class="fa-solid fa-cart-shopping"></i>
+                      Buy now
+                  </a>
+              </button>
+              
+            </div>
+          </div>
+            <!-- Jaket-3 -->
+          <div class="product bg-white rounded-md shadow-xl p-4 flex flex-col justify-between gap-8">
+            <div class="product-body">
+              <div class="bg-slate-200 p-5 rounded-md ">
+                <img src="./images/jacket-6.png" alt="" srcset="">
+              </div>
+                <h2 class="text-2xl font-bold font-roboto  pt-5 ">
+                  Man Casual Jackets 
+                </h2>
+                <p class="text-base">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat ea dolorum iure quisquam, facere velit labore ex a quam ullam. Tempora laudantium optio aut!
+                </p>
+              </div>
+              <div class="product-footer flex justify-between items-center gap-y-3 pb-3">
+                <h2 class="text-2xl text-penguine font-bold">
+                  $400
+                </h2>
+                <button class="bg-lime-600 py-3 px-6 rounded text-white">
+                  <a href="#">
+                      <i class="fa-solid fa-cart-shopping"></i>
+                      Buy now
+                  </a>
+              </button>
+              
+            </div>
+          </div>
+
+        </div>
+      
+      </section>
+      <!-- Mens-products end -->
+
+     
+    </main>
+
+    
+           
 </body>
 </html>
