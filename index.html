@@ -39,14 +39,14 @@
   <header>
     <div  class="container mx-auto">
       <nav class="flex flex-col md:flex-row justify-between items-center px-3 py-5 gap-5 md:gap-0">
-        <a href="#" class="w-auto md:w-5/12">
+        <a  class="w-auto md:w-5/12">
           <img class=" max-w-[14rem] lg:w-3/4 px-5 md:px-0" src="images/logo.png" alt="">
         </a>
         <ul class=" font-roboto font-extrabold w-auto flex gap-x-3 md:gap-x-8 text-xs  md:text-sm lg:text-base">
-          <li><a href="#">Home</a></li>
-          <li><a href="#">Products</a></li>
-          <li><a href="#">About us</a></li>
-          <li><a href="#">Contact us</a></li>
+          <li><a >Home</a></li>
+          <li><a >Products</a></li>
+          <li><a >About us</a></li>
+          <li><a >Contact us</a></li>
         </ul>
       </nav>
     </div>
@@ -63,7 +63,7 @@
         <div class="h-fit lg:h-screen flex flex-col-reverse md:flex-row items-center justify-around gap-10 md:gap-5 ">
           <div class="content md:w-5/12 space-y-4">
             <h1 class="text-5xl lg:text-7xl font-bebas ">
-              <span class="text-penguine">Be the Penguins</span>
+              <span id="heading" class="text-penguine">Be the Penguins</span>
               <br>
               <span>of Winter</span>
             </h1>
@@ -73,7 +73,7 @@
             </p>
             <button class="bg-lime-600 py-3 px-6 rounded text-white">
   
-              <a href="#">
+              <a id="change" >
                 <i class="fa-solid fa-cart-shopping"></i>
                 Buy now
               </a>
@@ -106,7 +106,7 @@
             <div class="bg-slate-200 p-5 rounded-md ">
               <img src="./images/jacket-1.png" alt="" srcset="">
             </div>
-            <h2 class="text-2xl font-bold font-roboto  pt-5 ">
+            <h2 class="name text-2xl font-bold font-roboto  pt-5 ">
               Yellow Coat Jacket
             </h2>
             <p class="text-base">
@@ -115,15 +115,12 @@
           </div>
           <div class="product-footer flex justify-between items-center gap-y-3 pb-3">
             <h2 class="text-2xl text-penguine font-bold">
-              $234
+              $<span class="product-price">234</span>
             </h2>
-            <button class="bg-lime-600 py-3 px-6 rounded text-white">
-              <a href="#">
+              <button  class = "buy-now bg-lime-600 py-3 px-6 rounded text-white">
                 <i class="fa-solid fa-cart-shopping"></i>
                 Buy now
-              </a>
-            </button>
-
+              </button>
           </div>
         </div>
         <!-- Jaket-2 -->
@@ -132,7 +129,7 @@
             <div class="bg-slate-200 p-5 rounded-md ">
               <img src="./images/jacket-2.png" alt="" srcset="">
             </div>
-            <h2 class="text-2xl font-bold font-roboto  pt-5 ">
+            <h2 class="name text-2xl font-bold font-roboto  pt-5 ">
               Ladies Jacket
             </h2>
             <p class="text-base">
@@ -142,14 +139,14 @@
           </div>
           <div class="product-footer flex justify-between items-center gap-y-3 pb-3">
             <h2 class="text-2xl text-penguine font-bold">
-              $270
+              $<span class="product-price">270</span>
             </h2>
-            <button class="bg-lime-600 py-3 px-6 rounded text-white">
-              <a href="#">
+            
+              <button  class = "buy-now bg-lime-600 py-3 px-6 rounded text-white">
                 <i class="fa-solid fa-cart-shopping"></i>
                 Buy now
-              </a>
-            </button>
+              </button>
+          
 
           </div>
         </div>
@@ -159,7 +156,7 @@
             <div class="bg-slate-200 p-5 rounded-md ">
               <img src="./images/jacket-3.png" alt="" srcset="">
             </div>
-            <h2 class="text-2xl font-bold font-roboto  pt-5 ">
+            <h2 class="name text-2xl font-bold font-roboto  pt-5 ">
               Woman Leather Jacket
             </h2>
             <p class="text-base">
@@ -168,19 +165,17 @@
             </p>
           </div>
           <div class="product-footer flex justify-between items-center gap-y-3 pb-3">
-            <h2 class="text-2xl text-penguine font-bold">
-              $400
+            <h2 class=" text-2xl text-penguine font-bold">
+              $ <span class="product-price">400</span>
             </h2>
-            <button class="bg-lime-600 py-3 px-6 rounded text-white">
-              <a href="#">
+              <button class = "buy-now bg-lime-600 py-3 px-6 rounded text-white">
                 <i class="fa-solid fa-cart-shopping"></i>
                 Buy now
-              </a>
-            </button>
+              </button>
+          
 
           </div>
         </div>
-
 
       </div>
 
@@ -203,7 +198,7 @@
             <div class="bg-slate-200 p-5 rounded-md ">
               <img src="./images/jacket-4.png" alt="" srcset="">
             </div>
-            <h2 class="text-2xl font-bold font-roboto  pt-5 ">
+            <h2 class="name text-2xl font-bold font-roboto  pt-5 ">
               Snowboard Jacket Mens
             </h2>
             <p class="text-base">
@@ -212,13 +207,11 @@
           </div>
           <div class="product-footer flex justify-between items-center gap-y-3 pb-3">
             <h2 class="text-2xl text-penguine font-bold">
-              $234
+              $<span class="product-price">234</span>
             </h2>
-            <button class="bg-lime-600 py-3 px-6 rounded text-white">
-              <a href="#">
-                <i class="fa-solid fa-cart-shopping"></i>
-                Buy now
-              </a>
+            <button  class = "buy-now bg-lime-600 py-3 px-6 rounded text-white">
+              <i class="fa-solid fa-cart-shopping"></i>
+              Buy now
             </button>
 
           </div>
@@ -229,7 +222,7 @@
             <div class="bg-slate-200 p-5 rounded-md ">
               <img src="./images/jacket-5.png" alt="" srcset="">
             </div>
-            <h2 class="text-2xl font-bold font-roboto  pt-5 ">
+            <h2 class="name text-2xl font-bold font-roboto  pt-5 ">
               Man Leather Jackets
             </h2>
             <p class="text-base">
@@ -239,13 +232,11 @@
           </div>
           <div class="product-footer flex justify-between items-center gap-y-3 pb-3">
             <h2 class="text-2xl text-penguine font-bold">
-              $270
+              $<span class="product-price">370</span>
             </h2>
-            <button class="bg-lime-600 py-3 px-6 rounded text-white">
-              <a href="#">
-                <i class="fa-solid fa-cart-shopping"></i>
-                Buy now
-              </a>
+            <button  class = "buy-now bg-lime-600 py-3 px-6 rounded text-white">
+              <i class="fa-solid fa-cart-shopping"></i>
+              Buy now
             </button>
 
           </div>
@@ -256,7 +247,7 @@
             <div class="bg-slate-200 p-5 rounded-md ">
               <img src="./images/jacket-6.png" alt="" srcset="">
             </div>
-            <h2 class="text-2xl font-bold font-roboto  pt-5 ">
+            <h2 class="name text-2xl font-bold font-roboto  pt-5 ">
               Man Casual Jackets
             </h2>
             <p class="text-base">
@@ -266,13 +257,11 @@
           </div>
           <div class="product-footer flex justify-between items-center gap-y-3 pb-3">
             <h2 class="text-2xl text-penguine font-bold">
-              $400
+              $<span class="product-price">600</span>
             </h2>
-            <button class="bg-lime-600 py-3 px-6 rounded text-white">
-              <a href="#">
-                <i class="fa-solid fa-cart-shopping"></i>
-                Buy now
-              </a>
+            <button  class = "buy-now bg-lime-600 py-3 px-6 rounded text-white">
+              <i class="fa-solid fa-cart-shopping"></i>
+              Buy now
             </button>
 
           </div>
@@ -350,6 +339,38 @@
     </section>
     <!-- Benefits end -->
 
+    <!-- Cart -->
+    <section id="cart" class="container mx-auto hidden">
+      <div class="shadow-xl bg-white fixed top-5 right-0 p-5 rounded">
+        <div class="flex justify-between items-center mb-4">
+          <h6 class="text-xl font-semibold w-3/5">
+            Cart
+          </h6>
+            <i class="fa-solid fa-xmark" onclick="vanish(event)"></i>
+        </div>
+        <ul id="items">
+          
+        </ul>
+        <div class="flex justify-between items-center mb-5 ">
+          <h2 class="font-bold">
+            Total Price
+            <h6 id="sub-total">0</h6>
+          </h2>
+        </div>
+        <button  id="cupon" class = "bg-lime-600 py-2 px-4 rounded text-white">apply discount</button>
+      </div>
+    </section>
+
+    <section id="popUp" class="hidden shadow-xl bg-white fixed top-0 mx-auto p-10 rounded">
+        <div id='discount' class="flex items-center justify-between">
+          <input id="discount-field" class="font-semibold w-4/6 text-sm py-1 px-4" type="text" placeholder="type your cupon code">
+          <input id="btn-submit" class="bg-lime-600 py-1 px-4 rounded text-white w-2/6 hover:cursor-pointer" type="button" value="apply">
+        </div>
+      <h2 id="msg" class="mt-4 text-lg text-slate-800 font-bold font-roboto pb-3 hidden" >
+      </h2>
+
+    </section>
+
   </main>
 
   <footer class="conatiner p-5 mx-auto mt-14 md:mt-24 mb-10">
@@ -358,6 +379,7 @@
     </p>
   </footer>
 
+<script src="./script.js"></script>
 </body>
 
 </html>
