@@ -346,7 +346,7 @@
           <h6 class="text-xl font-semibold w-3/5">
             Cart
           </h6>
-            <i class="fa-solid fa-xmark" onclick="vanish(event)"></i>
+            <i class="fa-solid fa-xmark" onclick="vanish(cart)"></i>
         </div>
         <ul id="items">
           
@@ -361,8 +361,9 @@
       </div>
     </section>
 
-    <section id="popUp" class="hidden shadow-xl bg-white fixed top-0 mx-auto p-10 rounded">
-        <div id='discount' class="flex items-center justify-between">
+    <section id="popUp" class="hidden shadow-xl bg-white fixed top-0 mx-auto rounded p-5">
+      <i class="ml-[90%] mb-5 fa-solid fa-xmark"onclick="vanish(popUp)" ></i>
+        <div id='discount' class="flex items-center justify-between pb-4">
           <input id="discount-field" class="font-semibold w-4/6 text-sm py-1 px-4" type="text" placeholder="type your cupon code">
           <input id="btn-submit" class="bg-lime-600 py-1 px-4 rounded text-white w-2/6 hover:cursor-pointer" type="button" value="apply">
         </div>

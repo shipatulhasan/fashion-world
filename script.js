@@ -91,7 +91,7 @@ document.getElementById('btn-submit').addEventListener('click',function(){
     if(isTrue == true){
         cuponField.classList.add('hidden')
         h2.classList.remove('hidden')
-        h2.innerText = 'Hey you got discount today.'
+        h2.innerText = 'Hey you got 30% discount today.'
 
     }
     else{
@@ -101,8 +101,10 @@ document.getElementById('btn-submit').addEventListener('click',function(){
     }
 })
 
-function vanish(){
-    if(cart.className !== 'hidden'){
-        cart.classList.add('hidden')
+
+
+function vanish(id){
+    if(id.className !== 'hidden'){
+        id.classList.add('hidden')
     }
 }
